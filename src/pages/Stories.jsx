@@ -203,7 +203,7 @@ export default function Stories() {
             alt=""
             className="hidden md:block lg:hidden"
           />
-          <img src={storiesBgMobile} alt="" className="md:hidden" />
+          <img src={storiesBgMobile} alt="" className="md:hidden mx-auto" />
           <div className="bg-black md:bg-transparent p-10 md:p-0 md:absolute top-40 left-20 text-white text-start">
             <p className="font-bold text-xs">LAST MONTH’S FEATURED STORY</p>
             <h1 className="font-bold text-3xl md:text-5xl w-60 md:w-80 my-5">
@@ -232,7 +232,7 @@ export default function Stories() {
           </div>
         </section>
 
-        <section className="flex flex-wrap">
+        <section className="flex flex-wrap justify-center">
           {storiesArray.map((item) => (
             <Link key={item.id} className="after-underline_images">
               <motion.div
